@@ -9,7 +9,6 @@ import {
 } from "react-icons/fa"; // Import Font Awesome icons
 
 // Import your custom PNG images
-// Update the import paths to point to the new location inside src/
 import locationIcon from "../../assets/location.png"; // Adjust the path as needed
 import phoneIcon from "../../assets/phone.png"; // Adjust the path as needed
 import emailIcon from "../../assets/mail.png"; // Adjust the path as needed
@@ -78,20 +77,38 @@ const Footer = () => {
             <div className="contact-info">
               <h4 className="information-title">Information</h4>
               <p>
-                <img
-                  src={locationIcon}
-                  alt="Location Icon"
-                  className="footer-icon"
-                />{" "}
-                Queen Rania St 115, Amman, Jordan
+                <a
+                  href="https://www.google.com/maps?q=Queen+Rania+St+115,+Amman,+Jordan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={locationIcon}
+                    alt="Location Icon"
+                    className="footer-icon"
+                  />{" "}
+                  Queen Rania St 115, Amman, Jordan
+                </a>
               </p>
               <p>
-                <img src={phoneIcon} alt="Phone Icon" className="footer-icon" />{" "}
-                +962 797461628
+                <a href="tel:+962797461628">
+                  <img
+                    src={phoneIcon}
+                    alt="Phone Icon"
+                    className="footer-icon"
+                  />{" "}
+                  +962 797461628
+                </a>
               </p>
               <p>
-                <img src={emailIcon} alt="Email Icon" className="footer-icon" />{" "}
-                info@uni-jo.com
+                <a href="mailto:info@uni-jo.com">
+                  <img
+                    src={emailIcon}
+                    alt="Email Icon"
+                    className="footer-icon"
+                  />{" "}
+                  info@uni-jo.com
+                </a>
               </p>
             </div>
           </div>
