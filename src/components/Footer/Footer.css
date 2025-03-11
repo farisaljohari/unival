@@ -1,0 +1,144 @@
+/* Footer Base Styling */
+.footer {
+    background-color: #222222;
+    /* Dark background */
+    color: #ffffff;
+    /* White text color */
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.company-list {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-info {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px 0;
+}
+
+.footer-section h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.information-title {
+    font-size: 1.6rem !important;
+    font-weight: 600;
+}
+
+.footer-section p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    color: #cccccc;
+    /* Light gray text */
+}
+
+.footer-icon {
+    margin-right: 10px;
+    color: #00aaff;
+    /* Light blue icons */
+    font-size: 1.2rem;
+    /* Consistent icon size */
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #cccccc;
+    display: flex;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: #ffffff;
+    /* White icons */
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #00aaff;
+    /* Light blue on hover */
+}
+
+.footer-note {
+    margin: 0;
+    padding: 14px;
+    font-size: 0.8rem;
+    color: white;
+    /* margin-top: 10px; */
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #107eb9de;
+}
+
+.footer-note p {
+    margin: 0;
+    padding: 0px;
+}
+
+.logo {
+    width: 200px;
+    height: 70px;
+    background-image: url("../../../public/assets/logo_UNIVAL.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+    }
+
+    .footer-section p {
+        justify-content: center;
+    }
+}
+
+.footer-icon {
+    width: 25px;
+    /* Adjust as needed */
+    height: 25px;
+    /* Adjust as needed */
+    margin-right: 8px;
+    /* Adjust spacing as needed */
+    vertical-align: middle;
+    /* Align with text */
+}

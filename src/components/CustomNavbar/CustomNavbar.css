@@ -1,0 +1,164 @@
+/* Navbar Base Styling */
+.navbar {
+    padding: 0 !important;
+}
+
+/* Custom Navbar Background Color */
+.custom-navbar {
+    background-color: #f8f9fa;
+    /* Light gray background */
+    border-bottom: 1px solid #e0e0e0;
+    /* Add a subtle border */
+}
+
+/* Brand Styling */
+.custom-brand {
+    color: #333;
+    /* Dark gray text */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Logo Styling */
+.logo {
+    width: 200px;
+    height: 70px;
+    background-image: url("../../../public/assets/logo_UNIVAL.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Nav Links Styling */
+.custom-nav-links {
+    display: flex;
+    gap: 40px;
+    /* Consistent spacing between links */
+}
+
+.custom-nav-links .custom-nav-link {
+    color: #555;
+    /* Medium gray text */
+    font-size: 19px;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+}
+
+.custom-nav-links .custom-nav-link:hover,
+.custom-nav-links .custom-nav-link.active {
+    color: #007bff;
+    /* Blue text on hover and when active */
+}
+
+/* Dropdown Styling */
+.custom-nav-dropdown .nav-link {
+    color: #555;
+    /* Medium gray text */
+    font-weight: 500;
+}
+
+/* Remove the dropdown arrow */
+.custom-nav-dropdown .dropdown-toggle::after {
+    display: none !important;
+}
+
+.custom-dropdown-item {
+    color: #555;
+    /* Medium gray text */
+}
+
+.custom-dropdown-item:hover {
+    background-color: #f8f9fa;
+    /* Light gray background on hover */
+    color: #007bff;
+    /* Blue text on hover */
+}
+
+/* Language Switcher Styling */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-left: 15px;
+    /* Add some spacing */
+}
+
+.language-switcher:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    /* Light blue background on hover */
+}
+
+.global-icon {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+.language-text {
+    font-weight: 500;
+    color: #555;
+}
+
+/* Mobile View Styling */
+@media (max-width: 768px) {
+    .language-switcher {
+        margin-left: 0;
+        /* Remove margin in mobile view */
+        padding: 10px;
+        /* Increase padding for better touch interaction */
+        width: 100%;
+        /* Full width for better accessibility */
+        justify-content: center;
+        /* Center the content */
+        border-top: 1px solid #e0e0e0;
+        /* Add a subtle border for separation */
+        background-color: #f8f9fa;
+        /* Light background for contrast */
+    }
+
+    .global-icon {
+        font-size: 1.5rem;
+        /* Increase icon size for better visibility */
+    }
+
+    .language-text {
+        font-size: 1.1rem;
+        /* Increase text size for better readability */
+    }
+
+    .custom-nav-links {
+        gap: 20px;
+        /* Reduce gap between links for mobile view */
+        flex-direction: column;
+        /* Stack links vertically */
+        align-items: center;
+        /* Center-align links */
+    }
+
+    .custom-nav-link {
+        font-size: 16px;
+        /* Adjust font size for mobile */
+    }
+
+    .navbar-collapse {
+        padding-top: 10px;
+        /* Add spacing above the collapsed content */
+    }
+}
+
+/* RTL Support */
+[dir="rtl"] .custom-nav-links {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+[dir="rtl"] .language-text {
+    margin-right: 8px;
+}
+
+[dir="rtl"] .custom-language-links {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}

@@ -1,0 +1,145 @@
+/* Base styles for the About Us section */
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack content vertically on smaller screens */
+    align-items: center;
+    gap: 40px;
+    /* Reduced gap for smaller screens */
+    padding: 20px;
+    /* Reduced padding for smaller screens */
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.about-us-content {
+    flex: 1;
+    max-width: 100%;
+    /* Full width on smaller screens */
+    text-align: left;
+}
+
+.about-us-content h2 {
+    font-size: 2em;
+    /* Smaller font size for smaller screens */
+    font-weight: 600;
+    color: #0071bd;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.about-us-content h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #0071bd;
+    margin-top: 10px;
+}
+
+.about-us-content p {
+    font-size: 0.9em;
+    /* Smaller font size for smaller screens */
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.learn-more-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #0071bd;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;
+}
+
+.learn-more-btn:hover {
+    background-color: white;
+    border: #0071bd 2px solid;
+    transition: all 0.3s ease;
+    color: #0071bd;
+}
+
+.about-us-image {
+    flex: 1;
+    max-width: 100%;
+    /* Full width on smaller screens */
+    text-align: center;
+    /* Center the image on smaller screens */
+    border-radius: 10px;
+}
+
+.about-us-image img {
+    max-width: 100%;
+    /* Full width on smaller screens */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and larger screens */
+@media (min-width: 768px) {
+    .about-us-container {
+        flex-direction: row;
+        /* Switch back to horizontal layout */
+        gap: 60px;
+        /* Increase gap for tablets */
+        padding: 40px;
+        /* Increase padding for tablets */
+    }
+
+    .about-us-content {
+        max-width: 60%;
+        /* Limit content width */
+    }
+
+    .about-us-content h2 {
+        font-size: 2.5em;
+        /* Larger font size for tablets */
+    }
+
+    .about-us-content p {
+        font-size: 1em;
+        /* Normal font size for tablets */
+    }
+
+    .about-us-image {
+        max-width: 40%;
+        /* Limit image width */
+        text-align: right;
+        /* Align image to the right */
+    }
+
+    .about-us-image img {
+        max-width: 90%;
+        /* Adjust image width */
+    }
+}
+
+/* For desktops and larger screens */
+@media (min-width: 1024px) {
+    .about-us-container {
+        gap: 80px;
+        /* Increase gap for desktops */
+        padding: 50px;
+        /* Increase padding for desktops */
+    }
+
+    .about-us-content h2 {
+        font-size: 3em;
+        /* Larger font size for desktops */
+    }
+
+    .about-us-content p {
+        font-size: 1.1em;
+        /* Slightly larger font size for desktops */
+    }
+}

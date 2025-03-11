@@ -1,0 +1,18 @@
+.products-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.products-section h2 {
+    color: #333;
+}
+
+.products-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.products-section li {
+    margin: 10px 0;
+    color: #555;
+}
